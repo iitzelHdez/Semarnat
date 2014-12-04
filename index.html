@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 	<link rel="stylesheet" href="css/estilos.css">
+ 	<link rel="stylesheet" href="fonts.css">
+ 	<link rel="stylesheet" href="css/folder.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Prueba 1</title>
+</head>
+
+
+<body>
+	<header class="header" style="background-image: url('img/semarnat.jpg')">
+		<div class="menu_bar">
+		</div>
+		<a class="bt-menu"><span class="icon-logout"></span>Cerrar sesión</a>
+	</header>
+	
+<!--Menú -->
+	<nav>
+		<ul class="menu-top">
+			<li><a href="#">
+				<div class="contenedor_general">
+					<div class="contenedor_uno">
+					<p class="texto_uno">Inicio</p>
+					</div>
+					<div class="contenedor_dos">
+					<p class="texto_uno">Inicio</p>
+					</div>
+				</div>
+				</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="contenedor_general">
+						<div class="contenedor_uno">
+						<p class="texto_uno">Arboles</p>
+						</div>
+						<div class="contenedor_dos">
+						<p class="texto_uno">Arboles</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="contenedor_general">
+						<div class="contenedor_uno">
+						<p class="texto_uno">Predios</p>
+						</div>
+						<div class="contenedor_dos">
+						<p class="texto_uno">Predios</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="contenedor_general">
+						<div class="contenedor_uno">
+						<p class="texto_uno">Arboles-Predios</p>
+						</div>
+						<div class="contenedor_dos">
+						<p class="texto_uno">Arboles-Predios</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="contenedor_general">
+						<div class="contenedor_uno">
+						<p class="texto_uno">Buscar</p>
+						</div>
+						<div class="contenedor_dos">
+						<p class="texto_uno">Buscar</p>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+<div class="main">
+		<div class="slides">
+			<img src="img/about.jpg" alt="">
+			<img src="img/contacto.jpg" alt="">
+			<img src="img/home.jpg" alt="">
+			<img src="img/post.jpg" alt="">
+			<img src="img/postsample.jpg" alt="">
+		</div>
+</div>
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script>
+
+			$(function(){
+  $(".slides").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+
+      effect: "fade",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+	</script>
+
+
+	<!-- Carga de vistas-->
+	<section id = "contenido"></section>
+
+
+	<!-- Plantillas -->
+	<script type="text/x-handlebars-template" id="inicioView">
+
+
+	</script>
+
+	<script type="text/x-handlebars-template" id="arbolesView">
+	</script>
+
+	<script type="text/x-handlebars-template" id="prediosView">
+	</script>
+
+	<script type="text/x-handlebars-template" id="arbpreView">
+	</script>
+
+
+	<!--Librerías-->
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="js/vendor/jquery.app-folders.js"></script>
+	<script src="js/vendor/handlebars-v2.0.0.js"></script>
+	<script src="js/vendor/underscore.js"></script>
+	<script src="js/vendor/backbone.js"></script>
+	
+
+	<!--App-->
+	<script src="js/app.js"></script>
+	<!--Vistas-->
+	<script src="js/views/inicio.js"></script>
+	<script src="js/views/arboles.js"></script>
+	<script src="js/views/predios.js"></script>
+	<script src="js/views/arbpre.js"></script>
+
+	<!--Rutas-->
+	<script src="js/routes/router.js"></script>
+	
+	<script src="js/vendor/menu.js"></script>	
+	<script src="js/folder.js"></script>	
+
+</body>
+</html>

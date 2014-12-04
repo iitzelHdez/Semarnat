@@ -1,0 +1,180 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+header {
+  display: block;
+  width: 100%;
+  height: 250px;
+}
+
+header a {
+  float: right;
+  font-size: 18px;
+  margin: 5px;
+  padding: 10px;  
+}
+
+header a span {
+  padding-right: 5px;
+}
+
+.menu_bar {
+  font-size: 40px;
+  color: #fff;
+  display: none;
+}
+
+.menu_bar .bt-menu {
+  cursor: pointer;
+}
+
+nav {
+  margin: auto;
+  width: 1000px;
+  height: 40px;
+  background-color: red;
+}
+
+ul {
+  list-style: none;
+
+  height: 40px;
+}
+
+li {
+  float: left;
+  width: 50px;
+  height: 40px;
+  background-color: #0431B4;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+.menu-top li {
+  float: left;
+  width: 200px;
+  height: 40px;
+  background-color: #0431B4;
+  overflow: hidden;
+  margin-top: 0px;
+}
+div.contenedor_general:hover {
+  margin-top: -40px;
+}
+
+div.contenedor_general {
+  width: 200px;
+  height: 80px;
+  background-color: green;
+  -webkit-transition: margin-top .2s;
+}
+
+div.contenedor_uno {
+  width: 200px;
+  height: 36px;
+  background: blue;
+  overflow: hidden;
+  border-bottom: 4px solid #2E2E2E;
+}
+
+div.contenedor_dos {
+  width: 200px;
+  height: 36px;
+  background: #2E2E2E;
+  overflow: hidden;
+  border-bottom: 4px solid #0101DF;
+}
+
+p.texto_uno, p.texto_dos {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+/*--------- Slides -------------*/
+.main {
+  width: 70%;
+  max-width: 700px;
+  margin: 20px auto;
+
+}
+
+.slides {
+  width: 100%;
+
+}
+
+.slides img
+{
+  width: 100%;
+}
+
+.slidesjs-pagination {
+  background: #000;
+  list-style: none;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li {
+  float: left;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.slidesjs-pagination li a:hover {
+  background: #000;
+}
+
+.slides .active {
+  background: #000;
+}
+
+.slidesjs-navigation{
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 13.5px 20px;
+  float: right;
+}
+
+.contenido {
+  width: 76%;
+  float: left;
+  padding: 10px;
+}
+.datos{
+  box-shadow:  0 4px 7px #A7A7A7;
+}
+.contenido .datos {
+  width: 70%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+.contenido .datos .datos_sup {
+  background-color: #0089f1;
+  color: #fff;
+  padding: 2px 0 2px 15px;
+  box-shadow:  0 4px 7px #A7A7A7;
+}
+.desc-mod{
+  font-size: 14px;
+  display: block;
+  padding: 15px 35px;
+}
+.datos h3{
+  margin: 0px;
+}
